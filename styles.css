@@ -12,3 +12,9 @@ body, html {
   background-position: center;
   background-size: cover;
 }
+
+.border{
+  margin:auto;
+  width:40%;
+  border-color: aliceblue;
+}
