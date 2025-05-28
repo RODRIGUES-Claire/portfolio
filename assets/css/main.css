@@ -1883,10 +1883,15 @@ iframe {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  font-size: 2rem;
-  color: #e8031a;
-  padding: 0.001em 0.3em;
-  border-radius: 10%;
+  font-size: 1.5rem;
+  color: #e8e8e8;
+  background: #111011; /* ou une autre couleur de fond */
+  width: 40px; /* largeur fixe */
+  height: 40px; /* hauteur fixe */
+  border-radius: 50%; /* REND le bouton rond */
+  display: flex; /* pour centrer l'icône à l'intérieur */
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -1894,15 +1899,15 @@ iframe {
 .swiper-button-custom-left:hover,
 .swiper-button-custom-right:hover {
   background: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #e8e8e8;
 }
 
 .swiper-button-custom-left {
-  left: 5px;
+  left: 10px;
 }
 
 .swiper-button-custom-right {
-  right: 5px;
+  right: 10px;
 }
 
 .swiper-pagination-bullet-active {

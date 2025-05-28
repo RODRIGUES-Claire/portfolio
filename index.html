@@ -31,16 +31,17 @@
           <section id="banner">
             <div class="content">
               <header>
-                <h1>Bonjour, je suis Claire</h1>
-                <p>Bienvenue sur mon portfolio !</p>
+                <h1>Bienvenue sur mon portfolio !</h1>
+                <!-- <p>Bienvenue sur mon portfolio !</p> -->
               </header>
               <p>
                 Je suis une créative passionnée par la
                 <strong>modélisation 3D</strong>, le
                 <strong>design graphique</strong>, le
                 <strong>web design</strong> et l’intégration dans
-                <strong>Unreal Engine</strong>. Ici, vous trouverez un aperçu de
-                mes projets, de mes compétences, et de mon univers visuel.
+                <strong>Unreal Engine</strong>. <br />
+                Ici, vous trouverez un aperçu de mes projets, de mes
+                compétences, et de mon univers visuel.
               </p>
               <ul class="actions">
                 <li>
@@ -52,10 +53,13 @@
                   >
                 </li>
               </ul>
-            </div>
+            <!-- </div>
             <span class="image object">
-              <img src="images/pic10.jpg" alt="" />
-            </span>
+              <img
+                src="assets/img/design/artlink/Artlink_Linkedin_Post_2-80.jpg"
+                alt=""
+              />
+            </span> -->
           </section>
 
           <!-- Section -->
@@ -132,10 +136,13 @@
             </header>
             <ul class="contact">
               <li class="icon solid fa-envelope">
-                <a
-                  href="#"
-                  onclick="copyToClipboard('claire.rodrigues.work@gmail.com')"
+                <a href="#" id="copy-link" title="copier"
                   >claire.rodrigues.work@gmail.com</a
+                >
+                <span
+                  id="copy-feedback"
+                  style="margin-left: 8px; color: green; display: none"
+                  >Copié ✔</span
                 >
               </li>
               <li class="icon solid fa-home">Albi, FRANCE</li>

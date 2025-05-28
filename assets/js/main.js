@@ -233,4 +233,24 @@
       },
     });
   });
+
+  //Copier
+  const link = document.getElementById("copy-link");
+  const feedback = document.getElementById("copy-feedback");
+
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    navigator.clipboard
+      .writeText("claire.rodrigues.work@gmail.com")
+      .then(() => {
+        // Affiche le message
+        feedback.style.display = "inline";
+
+        // Cache le message après 1,5 seconde
+        setTimeout(() => {
+          feedback.style.display = "none";
+        }, 1500);
+      });
+  });
 })(jQuery);
